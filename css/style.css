@@ -1,0 +1,282 @@
+/******************************************************************
+
+		Theme: Default Basic Stylesheet
+		Name: style.css
+		Description: Here are set the reset and some basic styles which are most commonly used.
+		Author: Thomas Gull
+		Author URI: gulldesign.ch
+		Version: v2.0
+		Release: 2013-04-01
+		License: Public Licence
+
+******************************************************************/
+
+/* css reset
+------------------------------*/
+* { margin: 0; padding: 0; }
+
+ul { list-style: none; }
+
+/* base informations
+------------------------------*/
+@font-face {
+  font-family: 'Glyphicons Regular';
+  src: url('fonts/glyphicons-regular.eot');
+  src: url('fonts/glyphicons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-regular.woff') format('woff'), url('../fonts/glyphicons-regular.ttf') format('truetype'), url('../fonts/glyphicons-regular.svg#glyphiconsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	z-index: 0;
+	font-family: Arial, sans-serif;
+	font-size: 0.875em;
+	line-height: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 10px 0;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	font-weight: normal;
+	line-height: 1;
+	color: #999999;
+}
+
+h1, h2 { line-height: 40px; }
+h1 { font-size: 38.5px; }
+h2 { font-size: 31.5px; }
+h3 { font-size: 24.5px; }
+h4 { font-size: 17.5px; }
+h5 { font-size: 14px; }
+h6 { font-size: 11.9px; }
+h1 small { font-size: 24.5px; }
+h2 small { font-size: 17.5px; }
+h3 small { font-size: 14px; }
+h4 small { font-size: 14px; }
+
+p { margin: 0 0 10px 0; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.right {
+	float: right;
+}
+
+small { font-size: 85%; }
+.strong { font-weight: bold; }
+em { font-style: italic; }
+cite { font-style: normal; }
+
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #ffffff;
+}
+
+a {	color: #1D74D1;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #1D74D1;
+	text-decoration: underline;
+}
+
+blockquote {
+	padding: 0 0 0 15px;
+	margin: 0 0 20px;
+	border-left: 5px solid #ccc;
+}
+
+blockquote p {
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 300;
+	line-height: 1.25;
+}
+
+address {
+	display: block;
+	margin-bottom: 20px;
+	font-style: normal;
+	line-height: 20px;
+}
+
+/* customizing
+------------------------------*/
+
+.wrapper {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.spacerLarge { margin-bottom: 50px; }
+.spacerMedium { margin-bottom: 30px; }
+.spacerSmall { margin-bottom: 15px; }
+
+section.controlCenter {
+	background: #eee;
+	padding: 20px 12px;
+}
+
+span.prices {
+	float: right;
+	display: inline-block;
+	text-align: right;
+	width: 100%
+}
+
+span.price-old {
+	text-align: right;
+	font-size: .85rem;
+	font-weight: 300;
+	margin-top: -8px;
+	margin-right: 4px;
+	text-decoration: line-through;
+}
+
+span.price {
+	text-align: right;
+	font-size: .85rem;
+	font-weight: 300;
+}
+
+span.price-old + .price {
+	color: #E20A16;
+}
+
+span.shortDescription {
+	display: block;
+	text-align: right;
+}
+
+span.brand {
+	display: block;
+	text-align: center;
+	font-weight: 300;
+}
+
+span.title {
+	display: block;
+	text-align: left;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+
+/* alert
+------------------------------*/
+.alert {
+	width: 93%;
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 20px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.alert,
+.alert h4 {
+  color: #c09853;
+}
+
+.alert h4 {
+  display: inline;
+  margin: 0;
+  font-weight: bold;
+}
+
+.alert.info.invert {
+  background-color: #fff;
+  border-color: #bce8f1;
+  color: #666;
+}
+
+.alert.info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+
+.alert.info h4 {
+  display: inline;
+  color: #3a87ad;
+  font-weight: bold;
+}
+
+.alert.success.invert {
+  background-color: none;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+
+.alert.success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+
+.alert.success h4 {
+  display: inline;
+  color: #468847;
+}
+
+.alert.danger.invert,
+.alert.error.invert {
+  background-color: none;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
+.alert.danger,
+.alert.error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
+.alert.danger h4,
+.alert.error h4 {
+  display: inline;
+  color: #b94a48;
+}
+
+
+/* print css
+------------------------------*/
+@media print {
+	* {
+		text-shadow: none !important;
+		color: #000 !important;
+		background: transparent !important;
+		box-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+		img {
+		max-width: 100% !important;
+	}
+

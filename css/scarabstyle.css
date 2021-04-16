@@ -1,0 +1,94 @@
+.control {
+	background-color: #ddd;
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 8px #666;
+	margin-bottom: 6%;
+}
+
+.scarab-itemlist {
+	padding: 0px 15px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.scarab-item {
+	display: inline-block;
+	width: 204px;
+	margin: 10px 15px;
+	vertical-align: top;
+	font-size: 14px;
+	font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+	/*text-align: left;*/
+}
+
+.scarab-item img {
+	display: block;
+	max-width: 205px;
+	margin: 0 0 15px 0;
+	border: 0px;
+}
+
+.scarab-item .brand {
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.scarab-item .title {
+	display: block;
+	font-size: 1.7em;
+	text-align: center;
+	font-weight: 500;
+}
+
+.scarab-item .price {
+	display: block;
+	font-size: 1.7em;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 14px;
+}
+
+.scarab-item .price-old {
+	display: block;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 100;
+}
+
+.scarab-item .shortDescription {
+	display: block;
+	font-size: 1.5em;
+}
+
+.scarab-item a {
+	color: #000;
+	text-decoration: none;
+}
+
+.scarab-prev.glyphicons.chevron-left,
+.scarab-next.glyphicons.chevron-right {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: -10px;
+  font-size: 24px;
+  text-align: center;
+  color: #1D74D1;
+  cursor: pointer;
+}
+
+.scarab-prev { left: 0px; }
+.scarab-next { right: -25px; }
+
+.scarab-prev.glyphicons.chevron-left.scarab-disabled-button {
+	cursor: disabled;
+	color: #858585;
+	opacity: 1;
+}
+
+.scarab-disabled-button { cursor: disabled; }
